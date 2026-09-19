@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pinkora - Home</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pinkbrand: {
+                            50: '#fff1f7',
+                            100: '#ffe4ef',
+                            200: '#ffc9df',
+                            300: '#ff9fc5',
+                            400: '#ff6fa9',
+                            500: '#f83f8c',
+                            600: '#e91e6d',
+                            700: '#c91559',
+                            800: '#a5144a',
+                            900: '#8a1643'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-pinkbrand-50 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-white border-b border-pinkbrand-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-pinkbrand-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        P
+                    </div>
+
+                    <span class="text-2xl font-bold text-pinkbrand-600">
+                        Pinkora
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+
+                    <a href="index.html"
+                       class="text-pinkbrand-600 font-semibold hover:text-pinkbrand-800 transition">
+                        Home
+                    </a>
+
+                    <a href="src/pages/about.html"
+                       class="text-gray-600 hover:text-pinkbrand-600 transition">
+                        About
+                    </a>
+
+                    <a href="src/pages/contact.html"
+                       class="text-gray-600 hover:text-pinkbrand-600 transition">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Authentication Buttons -->
+                <div class="hidden md:flex items-center gap-3">
+
+                    <a href="src/pages/signin.html"
+                       class="px-5 py-2 rounded-lg text-pinkbrand-600 border border-pinkbrand-300 hover:bg-pinkbrand-50 transition">
+                        Sign In
+                    </a>
+
+                    <a href="src/pages/signup.html"
+                       class="px-5 py-2 rounded-lg bg-pinkbrand-500 text-white hover:bg-pinkbrand-600 transition shadow-md">
+                        Sign Up
+                    </a>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-pinkbrand-600 text-2xl">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="bg-gradient-to-br from-pinkbrand-100 via-white to-pinkbrand-50">
+
+        <div class="max-w-7xl mx-auto px-6 py-20 lg:py-28">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+
+                    <span class="inline-block bg-pinkbrand-100 text-pinkbrand-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        ✨ Welcome to Pinkora
+                    </span>
+
+                    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+                        Build Something
+                        <span class="text-pinkbrand-600">
+                            Beautiful.
+                        </span>
+                    </h1>
+
+                    <p class="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+                        Pinkora is a modern digital platform designed to help
+                        you discover ideas, connect with people, and create
+                        something amazing.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a href="src/pages/signup.html"
+                           class="px-7 py-3 bg-pinkbrand-500 text-white rounded-xl font-semibold hover:bg-pinkbrand-600 transition shadow-lg">
+                            Get Started →
+                        </a>
+
+                        <a href="src/pages/about.html"
+                           class="px-7 py-3 bg-white text-pinkbrand-600 border border-pinkbrand-200 rounded-xl font-semibold hover:bg-pinkbrand-50 transition">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                    <!-- Small Stats -->
+                    <div class="mt-10 flex gap-8">
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                10K+
+                            </h3>
+
+                            <p class="text-sm text-gray-500">
+                                Users
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                50+
+                            </h3>
+
+                            <p class="text-sm text-gray-500">
+                                Features
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                99%
+                            </h3>
+
+                            <p class="text-sm text-gray-500">
+                                Satisfaction
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Card -->
+                <div class="relative">
+
+                    <div class="bg-white rounded-3xl shadow-2xl p-8 border border-pinkbrand-100">
+
+                        <div class="flex items-center justify-between mb-8">
+
+                            <div>
+                                <p class="text-sm text-gray-500">
+                                    Welcome back
+                                </p>
+
+                                <h2 class="text-2xl font-bold text-gray-900">
+                                    Your Dashboard
+                                </h2>
+                            </div>
+
+                            <div class="w-12 h-12 bg-pinkbrand-100 rounded-full flex items-center justify-center text-xl">
+                                💗
+                            </div>
+
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mb-7">
+
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium">
+                                    Your Progress
+                                </span>
+
+                                <span class="text-sm font-semibold text-pinkbrand-600">
+                                    75%
+                                </span>
+                            </div>
+
+                            <div class="w-full bg-pinkbrand-100 rounded-full h-3">
+
+                                <div class="bg-pinkbrand-500 h-3 rounded-full"
+                                     style="width: 75%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Dashboard Cards -->
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div class="bg-pinkbrand-50 rounded-2xl p-5">
+                                <div class="text-2xl mb-2">🎨</div>
+
+                                <h3 class="font-bold">
+                                    Creative
+                                </h3>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Explore ideas
+                                </p>
+                            </div>
+
+                            <div class="bg-pinkbrand-50 rounded-2xl p-5">
+                                <div class="text-2xl mb-2">🚀</div>
+
+                                <h3 class="font-bold">
+                                    Growth
+                                </h3>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Reach goals
+                                </p>
+                            </div>
+
+                            <div class="bg-pinkbrand-50 rounded-2xl p-5">
+                                <div class="text-2xl mb-2">💡</div>
+
+                                <h3 class="font-bold">
+                                    Ideas
+                                </h3>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    New inspiration
+                                </p>
+                            </div>
+
+                            <div class="bg-pinkbrand-50 rounded-2xl p-5">
+                                <div class="text-2xl mb-2">❤️</div>
+
+                                <h3 class="font-bold">
+                                    Community
+                                </h3>
+
+                                <p class="text-sm text-gray-500 mt-1">
+                                    Connect together
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES SECTION ================= -->
+
+    <section class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Heading -->
+
+            <div class="text-center max-w-2xl mx-auto mb-14">
+
+                <span class="text-pinkbrand-600 font-semibold">
+                    OUR FEATURES
+                </span>
+
+                <h2 class="text-4xl font-bold text-gray-900 mt-3">
+                    Everything You Need
+                </h2>
+
+                <p class="text-gray-600 mt-4">
+                    Powerful features designed to make your experience
+                    simple, beautiful, and enjoyable.
+                </p>
+
+            </div>
+
+
+            <!-- Feature Cards -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        ⚡
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Fast & Simple
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Enjoy a smooth and simple experience with a
+                        fast and responsive interface.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        🔒
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Secure Platform
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Your information is handled with modern security
+                        practices and reliable technology.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        📱
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Fully Responsive
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Access your website comfortably from phones,
+                        tablets, and desktop devices.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        🎯
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Easy to Use
+                    </h3>
+
+                    <p class="text-gray-600">
+                        A clean interface makes it easy for everyone
+                        to navigate and use the platform.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        🌸
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Beautiful Design
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Modern visual elements create a pleasant and
+                        engaging user experience.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="p-8 bg-pinkbrand-50 rounded-2xl border border-pinkbrand-100 hover:shadow-xl transition">
+
+                    <div class="w-14 h-14 bg-pinkbrand-500 text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                        💬
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Community
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Connect and interact with people who share
+                        your interests and ideas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA SECTION ================= -->
+
+    <section class="py-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="bg-gradient-to-r from-pinkbrand-500 to-pinkbrand-700 rounded-3xl p-10 md:p-16 text-center text-white shadow-xl">
+
+                <h2 class="text-4xl font-bold">
+                    Ready to Get Started?
+                </h2>
+
+                <p class="mt-4 text-pink-100 max-w-2xl mx-auto">
+                    Join Pinkora today and start exploring a world of
+                    creativity, connection, and possibilities.
+                </p>
+
+                <a href="src/pages/signup.html"
+                   class="inline-block mt-8 bg-white text-pinkbrand-600 px-8 py-3 rounded-xl font-bold hover:bg-pinkbrand-50 transition">
+                    Create Your Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-gray-900 text-white">
+
+        <div class="max-w-7xl mx-auto px-6 py-14">
+
+            <div class="grid md:grid-cols-4 gap-10">
+
+                <!-- Brand -->
+                <div>
+
+                    <div class="flex items-center gap-2 mb-4">
+
+                        <div class="w-10 h-10 bg-pinkbrand-500 rounded-xl flex items-center justify-center font-bold text-xl">
+                            P
+                        </div>
+
+                        <span class="text-2xl font-bold">
+                            Pinkora
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-400 leading-relaxed">
+                        A beautiful digital experience built with
+                        HTML and Tailwind CSS.
+                    </p>
+
+                </div>
+
+
+                <!-- Navigation -->
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Navigation
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-400">
+
+                        <li>
+                            <a href="index.html" class="hover:text-pinkbrand-400">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="src/pages/about.html" class="hover:text-pinkbrand-400">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="src/pages/contact.html" class="hover:text-pinkbrand-400">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Account -->
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Account
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-400">
+
+                        <li>
+                            <a href="src/pages/signup.html" class="hover:text-pinkbrand-400">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="src/pages/signin.html" class="hover:text-pinkbrand-400">
+                                Sign In
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Contact
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Email:
+                        hello@pinkora.com
+                    </p>
+
+                    <p class="text-gray-400 mt-2">
+                        Lahore, Pakistan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Footer -->
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+
+                <p class="text-gray-500 text-sm">
+                    © 2026 Pinkora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
