@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pinkora - Sign Up</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pinkbrand: {
+                            50: '#fff1f7',
+                            100: '#ffe4ef',
+                            200: '#ffc9df',
+                            300: '#ff9fc5',
+                            400: '#ff6fa9',
+                            500: '#f83f8c',
+                            600: '#e91e6d',
+                            700: '#c91559',
+                            800: '#a5144a',
+                            900: '#8a1643'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-pinkbrand-50 text-gray-800">
+
+
+    <!-- ===================================================== -->
+    <!-- NAVBAR -->
+    <!-- ===================================================== -->
+
+    <nav class="bg-white border-b border-pinkbrand-100 shadow-sm sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+
+                <a href="../../index.html" class="flex items-center gap-2">
+
+                    <div class="w-10 h-10 bg-pinkbrand-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        P
+                    </div>
+
+                    <span class="text-2xl font-bold text-pinkbrand-600">
+                        Pinkora
+                    </span>
+
+                </a>
+
+
+                <!-- Navigation -->
+
+                <div class="hidden md:flex items-center gap-8">
+
+                    <a href="../../index.html"
+                       class="text-gray-600 hover:text-pinkbrand-600 transition">
+                        Home
+                    </a>
+
+                    <a href="about.html"
+                       class="text-gray-600 hover:text-pinkbrand-600 transition">
+                        About
+                    </a>
+
+                    <a href="contact.html"
+                       class="text-gray-600 hover:text-pinkbrand-600 transition">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- Authentication -->
+
+                <div class="hidden md:flex items-center gap-3">
+
+                    <a href="signin.html"
+                       class="px-5 py-2 rounded-lg text-pinkbrand-600 border border-pinkbrand-300 hover:bg-pinkbrand-50 transition">
+                        Sign In
+                    </a>
+
+                    <a href="signup.html"
+                       class="px-5 py-2 rounded-lg bg-pinkbrand-500 text-white hover:bg-pinkbrand-600 transition shadow-md">
+                        Sign Up
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Button -->
+
+                <button class="md:hidden text-pinkbrand-600 text-2xl">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ===================================================== -->
+    <!-- BREADCRUMB -->
+    <!-- ===================================================== -->
+
+    <div class="max-w-6xl mx-auto px-6 pt-8">
+
+        <nav class="flex" aria-label="Breadcrumb">
+
+            <ol class="inline-flex items-center space-x-2 text-sm">
+
+                <li>
+
+                    <a href="../../index.html"
+                       class="text-gray-500 hover:text-pinkbrand-600">
+                        Home
+                    </a>
+
+                </li>
+
+                <li class="text-gray-400">
+                    /
+                </li>
+
+                <li class="text-pinkbrand-600 font-medium">
+                    Sign Up
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- SIGN UP SECTION -->
+    <!-- ===================================================== -->
+
+    <section class="py-12 md:py-16">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+
+                <!-- ================================================= -->
+                <!-- LEFT SIDE -->
+                <!-- ================================================= -->
+
+                <div class="hidden lg:block">
+
+                    <span class="inline-block bg-pinkbrand-100 text-pinkbrand-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        ✨ Join Pinkora
+                    </span>
+
+                    <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+
+                        Create Your
+
+                        <span class="text-pinkbrand-600">
+                            Account.
+                        </span>
+
+                    </h1>
+
+                    <p class="text-lg text-gray-600 mt-6 leading-relaxed max-w-lg">
+
+                        Join our growing community and discover a beautiful
+                        digital experience designed around creativity,
+                        connection, and simplicity.
+
+                    </p>
+
+
+                    <!-- Benefits -->
+
+                    <div class="mt-8 space-y-5">
+
+
+                        <!-- Benefit 1 -->
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 bg-pinkbrand-100 rounded-xl flex items-center justify-center text-xl">
+                                🚀
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold">
+                                    Get Started Quickly
+                                </h3>
+
+                                <p class="text-sm text-gray-500">
+                                    Create your account in just a few steps.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Benefit 2 -->
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 bg-pinkbrand-100 rounded-xl flex items-center justify-center text-xl">
+                                🔒
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold">
+                                    Secure Experience
+                                </h3>
+
+                                <p class="text-sm text-gray-500">
+                                    Your account information stays protected.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Benefit 3 -->
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 bg-pinkbrand-100 rounded-xl flex items-center justify-center text-xl">
+                                💗
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold">
+                                    Join the Community
+                                </h3>
+
+                                <p class="text-sm text-gray-500">
+                                    Connect with people and explore new ideas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- SIGN UP CARD -->
+                <!-- ================================================= -->
+
+                <div class="bg-white rounded-3xl shadow-2xl border border-pinkbrand-100 p-8 md:p-10">
+
+
+                    <!-- Card Heading -->
+
+                    <div class="text-center mb-8">
+
+                        <div class="w-16 h-16 mx-auto bg-pinkbrand-100 rounded-2xl flex items-center justify-center text-3xl mb-5">
+                            💗
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-gray-900">
+                            Create Account
+                        </h2>
+
+                        <p class="text-gray-500 mt-2">
+                            Fill in your information below.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ================================================= -->
+                    <!-- SIGN UP FORM -->
+                    <!-- ================================================= -->
+
+                    <form action="#" method="POST" class="space-y-5">
+
+
+                        <!-- Full Name -->
+
+                        <div>
+
+                            <label for="fullname"
+                                   class="block mb-2 text-sm font-medium text-gray-900">
+
+                                Full Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                required
+                                minlength="3"
+                                autocomplete="name"
+                                placeholder="Enter your full name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pinkbrand-500 focus:border-pinkbrand-500 block w-full p-3.5">
+
+                        </div>
+
+
+
+                        <!-- Email -->
+
+                        <div>
+
+                            <label for="email"
+                                   class="block mb-2 text-sm font-medium text-gray-900">
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                placeholder="name@example.com"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pinkbrand-500 focus:border-pinkbrand-500 block w-full p-3.5">
+
+                        </div>
+
+
+
+                        <!-- Phone -->
+
+                        <div>
+
+                            <label for="phone"
+                                   class="block mb-2 text-sm font-medium text-gray-900">
+
+                                Phone Number
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                pattern="[0-9+\-\s]{7,20}"
+                                placeholder="+92 300 1234567"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pinkbrand-500 focus:border-pinkbrand-500 block w-full p-3.5">
+
+                        </div>
+
+
+
+                        <!-- Password -->
+
+                        <div>
+
+                            <label for="password"
+                                   class="block mb-2 text-sm font-medium text-gray-900">
+
+                                Password
+
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                                minlength="8"
+                                autocomplete="new-password"
+                                placeholder="Create a password"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pinkbrand-500 focus:border-pinkbrand-500 block w-full p-3.5">
+
+                            <p class="text-xs text-gray-500 mt-2">
+                                Password must contain at least 8 characters.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Confirm Password -->
+
+                        <div>
+
+                            <label for="confirm-password"
+                                   class="block mb-2 text-sm font-medium text-gray-900">
+
+                                Confirm Password
+
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                name="confirm-password"
+                                required
+                                minlength="8"
+                                autocomplete="new-password"
+                                placeholder="Confirm your password"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pinkbrand-500 focus:border-pinkbrand-500 block w-full p-3.5">
+
+                        </div>
+
+
+
+                        <!-- Terms Checkbox -->
+
+                        <div class="flex items-start">
+
+                            <div class="flex items-center h-5">
+
+                                <input
+                                    id="terms"
+                                    type="checkbox"
+                                    required
+                                    class="w-4 h-4 text-pinkbrand-600 bg-gray-100 border-gray-300 rounded focus:ring-pinkbrand-500">
+
+                            </div>
+
+                            <label for="terms"
+                                   class="ms-2 text-sm text-gray-600">
+
+                                I agree to the
+                                <a href="#"
+                                   class="text-pinkbrand-600 font-medium hover:underline">
+                                    Terms & Conditions
+                                </a>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="w-full text-white bg-pinkbrand-500 hover:bg-pinkbrand-600 focus:ring-4 focus:ring-pinkbrand-200 font-semibold rounded-lg text-sm px-5 py-3.5 text-center transition shadow-md">
+
+                            Create Account →
+
+                        </button>
+
+                    </form>
+
+
+
+                    <!-- Divider -->
+
+                    <div class="flex items-center my-7">
+
+                        <div class="flex-1 border-t border-gray-200"></div>
+
+                        <span class="px-4 text-sm text-gray-400">
+                            OR
+                        </span>
+
+                        <div class="flex-1 border-t border-gray-200"></div>
+
+                    </div>
+
+
+
+                    <!-- Social Buttons -->
+
+                    <div class="grid grid-cols-2 gap-4">
+
+                        <button
+                            type="button"
+                            class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-3 text-sm font-medium hover:bg-gray-50 transition">
+
+                            <span>
+                                G
+                            </span>
+
+                            Google
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-3 text-sm font-medium hover:bg-gray-50 transition">
+
+                            <span>
+                                f
+                            </span>
+
+                            Facebook
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Sign In Link -->
+
+                    <p class="text-center text-sm text-gray-500 mt-7">
+
+                        Already have an account?
+
+                        <a href="signin.html"
+                           class="text-pinkbrand-600 font-semibold hover:underline">
+
+                            Sign in.
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- TRUST / INFO CARDS -->
+    <!-- ===================================================== -->
+
+    <section class="py-16 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-10">
+
+                <span class="text-pinkbrand-600 font-semibold">
+                    WHY PINKORA?
+                </span>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-3">
+                    A Better Digital Experience
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+
+                <!-- Card 1 -->
+
+                <div class="bg-pinkbrand-50 border border-pinkbrand-100 rounded-2xl p-7 text-center hover:shadow-lg transition">
+
+                    <div class="text-3xl">
+                        ⚡
+                    </div>
+
+                    <h3 class="font-bold text-lg mt-4">
+                        Simple
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-2">
+                        Easy navigation and a clean interface.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="bg-pinkbrand-50 border border-pinkbrand-100 rounded-2xl p-7 text-center hover:shadow-lg transition">
+
+                    <div class="text-3xl">
+                        🔐
+                    </div>
+
+                    <h3 class="font-bold text-lg mt-4">
+                        Reliable
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-2">
+                        Designed with security and reliability in mind.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="bg-pinkbrand-50 border border-pinkbrand-100 rounded-2xl p-7 text-center hover:shadow-lg transition">
+
+                    <div class="text-3xl">
+                        🌸
+                    </div>
+
+                    <h3 class="font-bold text-lg mt-4">
+                        Beautiful
+                    </h3>
+
+                    <p class="text-gray-600 text-sm mt-2">
+                        A modern design made to be enjoyable.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer class="bg-gray-900 text-white">
+
+        <div class="max-w-7xl mx-auto px-6 py-14">
+
+            <div class="grid md:grid-cols-4 gap-10">
+
+
+                <!-- Brand -->
+
+                <div>
+
+                    <div class="flex items-center gap-2 mb-4">
+
+                        <div class="w-10 h-10 bg-pinkbrand-500 rounded-xl flex items-center justify-center font-bold text-xl">
+                            P
+                        </div>
+
+                        <span class="text-2xl font-bold">
+                            Pinkora
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-400 leading-relaxed">
+                        A beautiful digital experience built with
+                        HTML and Tailwind CSS.
+                    </p>
+
+                </div>
+
+
+                <!-- Navigation -->
+
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Navigation
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-400">
+
+                        <li>
+                            <a href="../../index.html"
+                               class="hover:text-pinkbrand-400">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html"
+                               class="hover:text-pinkbrand-400">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html"
+                               class="hover:text-pinkbrand-400">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Account -->
+
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Account
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-400">
+
+                        <li>
+                            <a href="signup.html"
+                               class="hover:text-pinkbrand-400">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signin.html"
+                               class="hover:text-pinkbrand-400">
+                                Sign In
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="font-bold text-lg mb-4">
+                        Contact
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Email: hello@pinkora.com
+                    </p>
+
+                    <p class="text-gray-400 mt-2">
+                        Lahore, Pakistan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom -->
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+
+                <p class="text-gray-500 text-sm">
+                    © 2026 Pinkora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ===================================================== -->
+    <!-- PASSWORD VALIDATION -->
+    <!-- ===================================================== -->
+
+    <script>
+
+        const signupForm = document.querySelector("form");
+
+        signupForm.addEventListener("submit", function(event) {
+
+            const password = document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+
+                event.preventDefault();
+
+                alert("Passwords do not match. Please try again.");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
